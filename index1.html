@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Default parameters
+           2.Reset Parameters  </title>
+</head>
+<body>
+    <!--1. Default parameters -->
+      
+    <!-- <script>
+        function talk(msg="hello thakur"){
+            alert(msg);
+        }
+        talk();
+        talk("hello Neeraj Thakur");
+    </script> -->
+
+    <!--2.Reset parameters  -->
+
+    <script>
+        function sum(...args){
+            let result=0;
+
+            for(let i=0;i<args.length;i++){
+                result=result+args[i];
+            }
+            alert(result);
+        }
+
+        sum(2,5);
+        sum(2,5,7);
+        sum(2,5,7,9);
+        sum(2,5,7,9,8);
+    </script>
+
+
+
+
+
+</body>
+</html>
